@@ -79,6 +79,7 @@ class RegisterController extends Controller
                 'mobile' => $data['mobile'],
                 'email' => $data['email'],
                 'password' => Hash::make($data['password']),
+                'status' => 0,
             ]);
 
             $address = new BusinessMailingAddress;
