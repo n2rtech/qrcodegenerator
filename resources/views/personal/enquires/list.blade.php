@@ -25,7 +25,7 @@
                                 <h3 class="header-title">Enquiries</h3>
                         </div>
                         <div class="col-sm-8 text-right">
-                            <a href="{{ route('admin.enquiries.create') }}" class="btn btn-success mb-3"><i
+                            <a href="{{ route('personal.enquiries.create') }}" class="btn btn-success mb-3"><i
                                     class="mdi mdi-plus"></i> Enquiry</a>
                         </div>
                         <div class="table-responsive">
@@ -51,14 +51,14 @@
                                             <td>{{ $enquiry->panel_name }}</td>
                                             <td>{{ $enquiry->construction_type }}</td>
                                             <td class="table-action text-center">
-                                                <a href="{{ route('admin.enquiries.show', $enquiry->id) }}"
+                                                <a href="{{ route('personal.enquiries.show', $enquiry->id) }}"
                                                     class="btn btn-primary"><i class="mdi mdi-eye-outline"></i> </a>
-                                                <a href="{{ route('admin.enquiries.edit', $enquiry->id) }}"
+                                                <a href="{{ route('personal.enquiries.edit', $enquiry->id) }}"
                                                     class="btn btn-warning"><i class="mdi mdi-pencil"></i> </a>
                                                 <button type="button" onclick="confirmDelete({{ $enquiry->id }})"
                                                     class="btn btn-danger"><i class="mdi mdi-delete"></i> </button>
                                                 <form id='delete-form{{ $enquiry->id }}'
-                                                    action='{{ route('admin.enquiries.destroy', $enquiry->id) }}'
+                                                    action='{{ route('personal.enquiries.destroy', $enquiry->id) }}'
                                                     method='POST'>
                                                     <input type='hidden' name='_token' value='{{ csrf_token() }}'>
                                                     <input type='hidden' name='_method' value='DELETE'>

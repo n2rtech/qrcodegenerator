@@ -7,8 +7,8 @@
             <div class="page-title-box">
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('admin.enquiries.index') }}">Enquiries</a>
+                        <li class="breadcrumb-item"><a href="{{ route('personal.dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('personal.enquiries.index') }}">Enquiries</a>
                         </li>
                         <li class="breadcrumb-item active">Edit</li>
                     </ol>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" id="enquiryForm" action="{{ route('admin.enquiries.update', $enquiry->id) }}" method="POST"
+                    <form class="form-horizontal" id="enquiryForm" action="{{ route('personal.enquiries.update', $enquiry->id) }}" method="POST"
                         enctype="multipart/form-data">
 
                         @csrf

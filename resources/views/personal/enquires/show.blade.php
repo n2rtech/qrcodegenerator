@@ -8,7 +8,7 @@
 			<div class="page-title-right">
 				<ol class="breadcrumb m-0">
 					<li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
-					<li class="breadcrumb-item"><a href="{{route('admin.enquiries.index')}}">Enquiries</a></li>
+					<li class="breadcrumb-item"><a href="{{route('personal.enquiries.index')}}">Enquiries</a></li>
 					<li class="breadcrumb-item active">Show</li>
 				</ol>
 			</div>
@@ -24,7 +24,7 @@
 						<h4 class="mt-2">Enquiries</h4>
 					</div>
 					<div class="col-md-8 text-right">
-						<a href="{{route('admin.personal-users.edit',['personal_user' => $user->id])}}" class="btn btn-warning">Show</a>
+						<a href="{{route('personal.enquiries.edit',$enquiry->id)}}" class="btn btn-warning">Show</a>
 						<a href="{{ url()->previous() }}" class="btn btn-outline-dark">Back </a>
 					</div>
 				</div>
