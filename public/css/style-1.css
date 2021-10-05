@@ -1,0 +1,125 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+}
+.logo a{
+	font-family: 'Poppins', sans-serif;
+	font-weight:700;
+	font-size:27px;
+	text-transform:uppercase;
+	color:#111111;
+	text-decoration:none;
+}
+.logo{
+	margin-top:12px;
+}
+.navbar-logo{
+	margin: 10px;
+}
+.header-link a{
+    color:#177BFE;
+    text-decoration:none;
+    font-size:12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:700;
+    float:right;
+}
+.header-link{
+	margin: 23px 0;
+}
+.header-section{
+	box-shadow: 0 1px 6px rgb(0 0 0 / 16%), 0 5px 5px rgb(0 0 0 / 12%);
+	margin-bottom:50px;
+}
+.header-section .form-control{
+	width:201px;
+	font-size:11px;
+	color:#6D6A6A;
+}
+.register-section h1{
+	font-size: 18px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    margin-left: 112px;
+    margin-bottom: 30px;
+}
+.register-section .form-control{
+	font-size:12px;
+	color:#6D6A6A;
+}
+#label-2{
+	font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 13px;
+    margin-left: 30px;
+}
+.checkbox-section input{
+	margin-left:16px;
+}
+.checkbox-section span{
+	color:#177BFE;
+	margin-left:3px;
+	font-weight:600;
+
+}
+.account-button button{
+	background-color:#177BFE;
+	color:#FFF;
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:500;
+	padding: 8px 16px;
+    border-radius: 3px;
+
+}
+.account-button .btn-primary{
+	padding: 8px 30px;
+}
+.account-button p{
+	margin: 0 0 10px;
+    font-size: 11px;
+    margin-top: 13px;
+}
+.account-button strong{
+	color:#177BFE;
+}
+.social-account {
+	text-align:center;
+}
+.social-account  .btn-primary{
+	padding: 8px 40px;
+}
+.social-account button{
+	background-color:#177BFE;
+	color:#FFF;
+	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:500;
+	padding: 8px 16px;
+    border-radius: 3px;
+}
+.image-block{
+	background-color: #ddd;
+    max-width:411px;
+    padding-top: 170px;
+    padding-bottom:230px;
+    margin-top:-50px;
+}
+.footer-section{
+	background-color:#111111;
+	padding:30px;
+	margin-top:180px;
+}
+.footer-section,.list-inline li a{
+	color: #C2C2C2;
+    text-decoration:none;
+    font-size: 12px;
+}
+.footer-section,.list-inline li a:hover{
+	color:orange;
+    text-decoration:none;
+    font-size: 12px;
+}
+.footer-section,.list-inline{
+	text-align:center;
+}

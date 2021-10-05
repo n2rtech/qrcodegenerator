@@ -1,0 +1,52 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+}
+nav.navbar{
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar-header a.navbar-brand{
+	font-family: 'Poppins', sans-serif;
+	font-weight:700;
+	font-size:27px;
+	text-transform:uppercase;
+	color:#111111;
+}
+.nav,.navbar-nav li a{
+	color:#5A5454;
+	font-size:12px;
+	font-family: 'Poppins', sans-serif;
+	font-weight:500;
+
+}
+ul.nav.navbar-nav{
+	margin-left:30px;
+}
+.secondary-menu{
+	margin-top:20px;
+	float: right;
+}
+.secondary-menu .dropdown-menu{
+	right: 0;
+    left: unset;
+}
+.secondary-menu button i{
+    color:#555555;
+     color:#555555;
+    font-weight: 500;
+    font-size: 12px;
+}
+.secondary-menu button i b{
+    font-family: 'Poppins', sans-serif;
+    padding-left:5px;
+    color:#555555;
+    font-weight: 500;
+    font-size: 12px;
+}
+.secondary-menu button span{
+    color:#555555;
+}
+.black-section{
+	/*background-color:#222222;*/
+}

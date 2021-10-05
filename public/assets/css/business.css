@@ -1,0 +1,131 @@
+/* Use this css file for Custom Css of Business user*/
+/*.table .thead-dark th{
+	background: #e3e7f7;
+    border-color: #e3e7f7;
+    color: #6a6a6a;
+}
+.table-action i{
+	color:#fff;
+}
+.table-action a.btn.btn-primary{
+	background-color:#d0d1d7;
+    border:1px solid #d0d1d7;
+    box-shadow:none;
+}
+.table-action a.btn.btn-warning{
+	background-color:#7e7ec5;
+    border:1px solid #7e7ec5;
+    box-shadow:none;
+}
+.table-action button.btn.btn-danger{
+	background-color:#b0bff9;
+    border:1px solid #b0bff9;
+    box-shadow:none;
+}
+.card-body .text-right a.btn.btn-success{
+    background-color: #a7a7ed;
+    box-shadow: 4px 2px 10px #9da8d7;
+    border-color: #a7a7ed;
+}
+.card-header button.btn.btn-warning.btn-sm{
+    background-color: #dfe2e5;
+    box-shadow: 4px 2px 8px #dfe2e5;
+    border-color: #d1d2d3;
+    color: #0e0e0e;
+}
+.card-header a.btn.btn-dark.btn-sm{
+    background-color: #5a5959;
+    border-color: #5a5959;
+    color:#fff;	
+}*/
+.left-side-menu{
+	background: #fff;
+}
+.side-nav .side-nav-link:active, .side-nav .side-nav-link:focus, .side-nav .side-nav-link:hover {
+    color: #000;
+    text-decoration: none;
+}
+.side-nav .side-nav-link span {
+    vertical-align: middle;
+    color: #222;
+}
+.side-nav .side-nav-link span:hover{
+    color:#7E7E7D;
+}
+.side-nav .side-nav-link i {
+    color: #222;
+}
+.side-nav .side-nav-link i:hover{
+    color:crimson;
+}
+.side-nav-second-level li a, .side-nav-third-level li a {
+    color: #222 !important;
+}
+.side-nav .mm-active>a {
+    color:#222 !important;
+}
+.side-nav-second-level li a, .side-nav-third-level li a:hover{
+    color: #7E7E7D !important;
+}
+
+.logo-lg h3{
+    color: #222 !important;
+    font-size: 26px;
+    float: left;
+    margin-left: -38px;
+    margin-top: -5px;
+}
+.logo-sm h3{
+    color: #222;
+    font-size: 26px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.btn-outline-light {
+    color: #a7abb1;
+    border-color: #a7abb1;
+}
+.widget-flat i {
+    font-size: 2rem;
+    opacity: 0.4;
+}
+h4.notification-title{
+	 margin-top: 1px;
+}
+button.btn.btn-success {
+	background: #eef2f7;
+    border-color: #eef2f7;
+    box-shadow: none;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.card-header button.btn.btn-warning.btn-sm{
+    background-color: #dfe2e5;
+    box-shadow: 4px 2px 8px #dfe2e5;
+    border-color: #d1d2d3;
+    color: #0e0e0e;
+}
+.table .thead-dark th{
+	background: #e3e7f7;
+    border-color: #e3e7f7;
+    color: #6a6a6a;
+}
+.table-action i{
+	color:#fff;
+}
+.table-action a.btn.btn-primary{
+	background-color:#d0d1d7;
+    border:1px solid #d0d1d7;
+    box-shadow:none;
+}
+.table-action button.btn.btn-danger{
+	background-color:#b0bff9;
+    border:1px solid #b0bff9;
+    box-shadow:none;
+}
+.card-body .text-right a.btn.btn-success{
+    background-color: #a7a7ed;
+    box-shadow: 4px 2px 10px #9da8d7;
+    border-color: #a7a7ed;
+}

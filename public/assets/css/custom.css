@@ -1,0 +1,22 @@
+.invalid-feedback {
+    display: block;
+}
+.dropdown-header {
+    padding: 4px 12px;
+}
+
+.card-pricing-recommended .card-pricing-plan-selected-tag {
+    background-color: rgb(156 250 92 / 65%);
+    color: #78797a;
+    padding: 5px 0;
+    font-weight: 700;
+    border-radius: .25rem .25rem 0 0;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+}
+
+.table .action-icon {
+    color: #ffffff;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0 3px;
+}

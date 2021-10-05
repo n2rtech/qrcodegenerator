@@ -1,0 +1,63 @@
+/* Use this css file for Custom Css of Personal user*/
+.left-side-menu{
+	background: #fff;
+}
+.side-nav .side-nav-link:active, .side-nav .side-nav-link:focus, .side-nav .side-nav-link:hover {
+    color: #000;
+    text-decoration: none;
+}
+.side-nav .side-nav-link span {
+    vertical-align: middle;
+    color: #222;
+}
+.side-nav .side-nav-link span:hover{
+    color:#7E7E7D;
+}
+.side-nav .side-nav-link i {
+    color: #222;
+}
+.side-nav .side-nav-link i:hover{
+    color:crimson;
+}
+.side-nav-second-level li a, .side-nav-third-level li a {
+    color: #222 !important;
+}
+.side-nav .mm-active>a {
+    color:#222 !important;
+}
+.side-nav-second-level li a, .side-nav-third-level li a:hover{
+    color: #7E7E7D !important;
+}
+
+.logo-lg h3{
+    color: #222;
+    font-size: 26px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.logo-sm h3{
+    color: #222;
+    font-size: 26px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.btn-outline-light {
+    color: #a7abb1;
+    border-color: #a7abb1;
+}
+.widget-flat i {
+    font-size: 2rem;
+    opacity: 0.4;
+}
+h4.notification-title{
+	 margin-top: 1px;
+}
+button.btn.btn-success {
+	background: #eef2f7;
+    border-color: #eef2f7;
+    box-shadow: none;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
