@@ -48,7 +48,7 @@
                         </div>
 
                         <div class="form-group col-sm-12">
-                            <input type="text" class="form-control mb-2 inptFielsd" id="mobile" name="mobile" placeholder="Mobile Number"
+                            <input type="number" class="form-control mb-2 inptFielsd" id="mobile" name="mobile" placeholder="Mobile Number"
                                 value="{{ old('mobile') }}">
                             @error('mobile')
                                 <p class="text-danger" style="font-size: 13px;">{{ $message }}</p>
@@ -56,6 +56,13 @@
                         </div>
 
                         <p class="mailing-address">Personal Mailing Address</p>
+                        <div class="form-group col-sm-12">
+                            <input type="text" class="form-control" id="company_name" name="company_name"
+                                placeholder="Company Name" value="{{ old('company_name') }}">
+                            @error('company_name')
+                                <p class="text-danger" style="font-size: 13px;">{{ $message }}</p>
+                            @enderror
+                        </div>
                         <div class="form-group col-sm-12">
                             <input type="text" class="form-control" id="address_1" name="address_1"
                                 placeholder="Street Address" value="{{ old('address_1') }}">
@@ -142,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="image-block">
+                        <div class="image-block"><img src="../assets/images/signup.jpg" class="img-responsive" alt="Sign Up">
                         </div>
                     </div>
                 </div>
@@ -159,7 +166,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
         integrity="sha512-BNZ1x39RMH+UYylOW419beaGO0wqdSkO7pi1rYDYco9OL3uvXaC/GTqA5O4CVK2j4K9ZkoDNSSHVkEQKkgwdiw=="
         crossorigin="anonymous"></script>
-    <script>
+    <!-- <script>
     var input = document.querySelector("#mobile");
     window.intlTelInput(input, {
         separateDialCode: true,
@@ -174,6 +181,6 @@
             return "e.g. " + selectedCountryPlaceholder;
         },
     });
-</script>
+</script> -->
 
 @endsection

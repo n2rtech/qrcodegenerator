@@ -8,7 +8,6 @@
                 <div class="banner-button">
                    <a href="{{route('register')}}" class="btn btn-primary">Sign Up for Free</a>
                 </div>
-                <p>Own a Business ? <strong>Get a Business Account</strong></p>
             </div>
         </div>
     </div>

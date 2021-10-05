@@ -7,14 +7,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Enquiries</a>
+                <a class="navbar-brand" href="/"><img src="../assets/images/logo.jpg" class="img-responsive" alt="Logo"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#">Individuals</a></li>
-                    <li><a href="#">Enquiries</a></li>
-                    <li><a href="#">Why Enquiries ?</a></li>
-                </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @guest
                         <a href="{{ route('login') }}" class="btn btn-default">Login</a>

@@ -224,13 +224,7 @@ ul.nav.navbar-nav{
 	padding: 8px 16px;
     border-radius: 3px;
 }
-.image-block{
-	background-color: #ddd;
-    max-width:411px;
-    padding-top: 170px;
-    padding-bottom:230px;
-    margin-top:-50px;
-}
+
 
 /*Plans Page Css*/
 nav.navbar{
@@ -243,6 +237,9 @@ nav.navbar{
 	font-size:27px;
 	text-transform:uppercase;
 	color:#111111;
+}
+.navbar-brand>img{
+    margin-top: -15px;
 }
 .nav,.navbar-nav li a{
 	color:#5A5454;
