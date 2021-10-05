@@ -7,13 +7,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Repslips</a>
+                <a class="navbar-brand" href="/">Enquiries</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="#">Individuals</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Why Repslips ?</a></li>
+                    <li><a href="#">Enquiries</a></li>
+                    <li><a href="#">Why Enquiries ?</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @guest

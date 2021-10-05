@@ -4,7 +4,7 @@
             <div class="col-sm-3">
                 <div class="blogs">
                     <h4>Organize</h4>
-                    <h6>Keep your files organized with dedicated filters at your finger tips.</h6>
+                    <h6>Keep your Enquiries organized with dedicated filters at your finger tips.</h6>
                 </div>
             </div>
             <div class="col-sm-3">
