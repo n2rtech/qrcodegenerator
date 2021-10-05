@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="image-block">
+                        <div class="image-block"><img src="../assets/images/login.jpg" class="img-responsive" alt="Login">
                         </div>
                     </div>
                 </div>

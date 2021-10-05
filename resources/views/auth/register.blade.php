@@ -103,10 +103,7 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <select type="text" class="form-control" id="country" name="country">
-                                    <option>Select Country</option>
-                                    <option class="United States of America" @if (old('country') == 'United States of America') selected @endif)>United States of
-                                        America</option>
-                                    <option class="United Kingdom" @if (old('country') == 'United Kingdom') selected @endif>United Kingdom</option>
+                                    <option class="India" @if (old('country') == 'India') selected @endif)>India</option>
                                 </select>
                                 @error('country')
                                     <p class="text-danger" style="font-size: 13px;">{{ $message }}</p>
