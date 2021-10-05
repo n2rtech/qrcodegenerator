@@ -41,7 +41,7 @@
             </li>
 
          <li class="side-nav-item">
-                <a href="{{route('personal.enquires.index')}}" class="side-nav-link">
+                <a href="{{route('personal.enquiries.index')}}" class="side-nav-link">
                     <i class="mdi mdi-bell"></i>
                     <span> Enquires </span>
                 </a>

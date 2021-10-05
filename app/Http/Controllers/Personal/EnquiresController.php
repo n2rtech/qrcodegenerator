@@ -14,8 +14,8 @@ class EnquiresController extends Controller
      */
     public function index()
     {
-        $enquires = Enquiry::latest()->paginate(20);
-        return view('personal.enquires.list', compact('enquires'));
+        $enquiries = Enquiry::latest()->paginate(20);
+        return view('personal.enquires.list', compact('enquiries'));
     }
 
     /**
