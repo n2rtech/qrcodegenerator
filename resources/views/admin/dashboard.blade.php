@@ -17,196 +17,10 @@
 </div>
 @include('admin.sections.flash-message')
 <!-- end page title -->
-<div class="row">
-    <div class="col-lg-6 col-xl-3">
-        <div class="card">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <h5 class="text-muted font-weight-normal mt-0 text-truncate" title="Campaign Sent">Campaign Sent</h5>
-                        <h3 class="my-2 py-1">9,184</h3>
-                        <p class="mb-0 text-muted">
-                            <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 3.27%</span>
-                        </p>
-                    </div>
-                    <div class="col-6">
-                        <div class="text-right">
-                            <div id="campaign-sent-chart" data-colors="#727cf5"></div>
-                        </div>
-                    </div>
-                </div> <!-- end row-->
-            </div> <!-- end card-body -->
-        </div> <!-- end card -->
-    </div> <!-- end col -->
 
-    <div class="col-lg-6 col-xl-3">
-        <div class="card">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <h5 class="text-muted font-weight-normal mt-0 text-truncate" title="New Leads">New Leads</h5>
-                        <h3 class="my-2 py-1">3,254</h3>
-                        <p class="mb-0 text-muted">
-                            <span class="text-danger mr-2"><i class="mdi mdi-arrow-down-bold"></i> 5.38%</span>
-                        </p>
-                    </div>
-                    <div class="col-6">
-                        <div class="text-right">
-                            <div id="new-leads-chart" data-colors="#0acf97"></div>
-                        </div>
-                    </div>
-                </div> <!-- end row-->
-            </div> <!-- end card-body -->
-        </div> <!-- end card -->
-    </div> <!-- end col -->
-
-    <div class="col-lg-6 col-xl-3">
-        <div class="card">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <h5 class="text-muted font-weight-normal mt-0 text-truncate" title="Deals">Deals</h5>
-                        <h3 class="my-2 py-1">861</h3>
-                        <p class="mb-0 text-muted">
-                            <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 4.87%</span>
-                        </p>
-                    </div>
-                    <div class="col-6">
-                        <div class="text-right">
-                            <div id="deals-chart" data-colors="#727cf5"></div>
-                        </div>
-                    </div>
-                </div> <!-- end row-->
-            </div> <!-- end card-body -->
-        </div> <!-- end card -->
-    </div> <!-- end col -->
-
-    <div class="col-lg-6 col-xl-3">
-        <div class="card">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <h5 class="text-muted font-weight-normal mt-0 text-truncate" title="Booked Revenue">Booked Revenue</h5>
-                        <h3 class="my-2 py-1">$253k</h3>
-                        <p class="mb-0 text-muted">
-                            <span class="text-success mr-2"><i class="mdi mdi-arrow-up-bold"></i> 11.7%</span>
-                        </p>
-                    </div>
-                    <div class="col-6">
-                        <div class="text-right">
-                            <div id="booked-revenue-chart" data-colors="#0acf97"></div>
-                        </div>
-                    </div>
-                </div> <!-- end row-->
-            </div> <!-- end card-body -->
-        </div> <!-- end card -->
-    </div> <!-- end col -->
-</div>
-<div class="row">
-    <div class="col-lg-5">
-        <div class="card">
-            <div class="card-body">
-                <div class="dropdown float-right">
-                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-dots-vertical"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Today</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
-                    </div>
-                </div>
-
-                <h4 class="header-title mb-1">Campaigns</h4>
-
-                <div id="dash-campaigns-chart" class="apex-charts" data-colors="#ffbc00,#727cf5,#0acf97"></div>
-
-                <div class="row text-center mt-2">
-                    <div class="col-md-4">
-                        <i class="mdi mdi-send widget-icon rounded-circle bg-light-lighten text-muted"></i>
-                        <h3 class="font-weight-normal mt-3">
-                            <span>6,510</span>
-                        </h3>
-                        <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-warning"></i> Total Sent</p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="mdi mdi-flag-variant widget-icon rounded-circle bg-light-lighten text-muted"></i>
-                        <h3 class="font-weight-normal mt-3">
-                            <span>3,487</span>
-                        </h3>
-                        <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-primary"></i> Reached</p>
-                    </div>
-                    <div class="col-md-4">
-                        <i class="mdi mdi-email-open widget-icon rounded-circle bg-light-lighten text-muted"></i>
-                        <h3 class="font-weight-normal mt-3">
-                            <span>1,568</span>
-                        </h3>
-                        <p class="text-muted mb-0 mb-2"><i class="mdi mdi-checkbox-blank-circle text-success"></i> Opened</p>
-                    </div>
-                </div>
-
-            </div>
-            <!-- end card body-->
-        </div>
-        <!-- end card -->
-    </div>
-    <!-- end col-->
-    
-    <div class="col-lg-7">
-        <div class="card">
-            <div class="card-body">
-                <div class="dropdown float-right">
-                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-dots-vertical"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Today</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Last Week</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Last Month</a>
-                    </div>
-                </div>
-
-                <h4 class="header-title mb-3">Revenue</h4>
-
-                <div class="chart-content-bg">
-                    <div class="row text-center">
-                        <div class="col-md-6">
-                            <p class="text-muted mb-0 mt-3">Current Month</p>
-                            <h2 class="font-weight-normal mb-3">
-                                <span>$42,025</span>
-                            </h2>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="text-muted mb-0 mt-3">Previous Month</p>
-                            <h2 class="font-weight-normal mb-3">
-                                <span>$74,651</span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="dash-revenue-chart" class="apex-charts" data-colors="#0acf97,#fa5c7c"></div>
-
-            </div>
-            <!-- end card body-->
-        </div>
-        <!-- end card -->
-    </div>
-    <!-- end col-->
-</div>
 <!-- end row-->
  <div class="row">
-    <div class="col-xl-4 col-lg-12">
+    <div class="col-xl-6 col-lg-6">
         <div class="card">
             <div class="card-body">
                 <div class="dropdown float-right">
@@ -220,7 +34,7 @@
                         <a href="javascript:void(0);" class="dropdown-item">Action</a>
                     </div>
                 </div>
-                <h4 class="header-title mb-3">Top Performing</h4>
+                <h4 class="header-title mb-3">Enquiries</h4>
 
                 <div class="table-responsive">
                     <table class="table table-striped table-sm table-nowrap table-centered mb-0">
@@ -303,7 +117,7 @@
     </div>
     <!-- end col-->
 
-    <div class="col-xl-4 col-lg-6">
+    <div class="col-xl-6 col-lg-6">
         <div class="card">
             <div class="card-body">
                 <div class="dropdown float-right">
@@ -317,7 +131,7 @@
                         <a href="javascript:void(0);" class="dropdown-item">Action</a>
                     </div>
                 </div>
-                <h4 class="header-title mb-4">Recent Leads</h4>
+                <h4 class="header-title mb-4">Latest Leads</h4>
 
                 <div class="media">
                     <img class="mr-3 rounded-circle" src="assets/images/users/avatar-2.jpg" width="40" alt="Generic placeholder image">
@@ -374,75 +188,9 @@
                 </div>
 
             </div>
-            <!-- end card-body -->
         </div>
-        <!-- end card-->
-    </div>
-    <!-- end col -->  
-
-    <div class="col-xl-4 col-lg-6">
-        <div class="card cta-box bg-primary text-white">
-            <div class="card-body">
-                <div class="media align-items-center">
-                    <div class="media-body">
-                        <h2 class="mt-0"><i class="mdi mdi-bullhorn-outline"></i>&nbsp;</h2>
-                        <h3 class="m-0 font-weight-normal cta-box-title">Enhance your <b>Campaign</b> for better outreach <i class="mdi mdi-arrow-right"></i></h3>
-                    </div>
-                    <img class="ml-3" src="assets/images/email-campaign.svg" width="120" alt="Generic placeholder image">
-                </div>
-            </div>
-            <!-- end card-body -->
-        </div>
-        <!-- end card-->
-
-        <!-- Todo-->
-        <div class="card">
-            <div class="card-body">
-                <div class="dropdown float-right">
-                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-dots-vertical"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Settings</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                    </div>
-                </div>
-                <h4 class="header-title mb-2">Todo</h4>
-
-                <div class="todoapp">
-                    <div data-simplebar style="max-height: 224px">
-                        <ul class="list-group list-group-flush todo-list" id="todo-list"></ul>
-                    </div>
-                </div> <!-- end .todoapp-->
-
-            </div> <!-- end card-body -->
-        </div> <!-- end card-->
-
-    </div>
-    <!-- end col -->  
+    </div> 
 </div>
-<!-- end row-->
-
-</div> <!-- container -->
-
-</div> <!-- content -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div> 
+</div> 
 @endsection
