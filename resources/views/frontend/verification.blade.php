@@ -1,5 +1,5 @@
 @extends('frontend.app')
-@section('title', 'Welcome to Repslips')
+@section('title', 'Welcome')
 @section('content')
 <div class="banner">
     <div class="container">

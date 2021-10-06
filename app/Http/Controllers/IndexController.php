@@ -10,4 +10,8 @@ class IndexController extends Controller
     public function index(){
         return view('frontend.index');
     }
+
+    public function results(){
+        return view('frontend.results');
+    }
 }

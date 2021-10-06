@@ -18,7 +18,7 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
 Auth::routes(['verify' => true]);
-
+Route::get('/results', [IndexController::class, 'results'])->name('results');
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
 Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');
 Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
