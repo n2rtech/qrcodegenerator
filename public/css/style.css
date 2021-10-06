@@ -30,14 +30,29 @@ nav.navbar{
 ul.nav.navbar-nav{
 	margin-left:30px;
 }
-.btn-default{
-	font-size:11px;
-	font-family: 'Poppins', sans-serif;
-	font-weight:500;
-	color:#177BFE;
-	border-color:#177BFE;
-  padding: 8px 32px;
-  border-radius: 3px;
+.header-top{
+    box-shadow: 1px 1px 10px #ccc;
+    background: #fff;
+}
+.register-img img{
+    position: relative;
+    left: 15%;
+}
+.login-content h3{
+    font-size: 16px;
+    line-height: 34px;
+    margin-top: 50px;
+    color: #222;
+    text-align: center;
+}
+.btn-default {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #2e4256;
+    border-color: #2e4256;
+    padding: 8px 32px;
+    border-radius: 3px;
 }
 .btn.btn-default{
 	background:#FFF;
@@ -45,41 +60,43 @@ ul.nav.navbar-nav{
 }
 .btn-default:hover{
 	color:#FFF;
-	border-color:#177BFE;
-	background:black;
+	border-color:#213242;
+	background:#213242;
 }
-.btn-primary{
-	font-size:11px;
-	font-family: 'Poppins', sans-serif;
-	font-weight:500;
-	color:#FFF;
-	border-color:#177BFE;
-  padding: 8px 16px;
-  border-radius: 3px;
+.btn-primary {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    border-color: #2e4256;
+    padding: 8px 16px;
+    border-radius: 3px;
 }
-.btn.btn-primary{
-	background:#177BFE;
+.btn.btn-primary {
+    background: #2e4256;
 }
-.btn-primary:hover{
-	background:#2173DF;
-	border-color:#177BFE;
+.btn-primary:hover {
+    background: #213242;
+    border-color: #213242;
 }
 .secondary-menu{
 	margin-top:20px;
 	float: right;
 }
-.banner{
-	background-color:#EEEEEE;
+.banner {
+    background-color: #d4e5f7;
+    padding: 30px 0px;
 }
-.caption{
-	padding:70px;
+.caption {
+    padding: 110px 17px;
 }
-.caption h2{
-	font-weight:600;
-	color:#111111;
-	font-family: 'Open sans', sans-serif;
-	max-width:330px;
-	line-height: 40px;
+.caption h2 {
+    font-weight: 500;
+    color: #111111;
+    font-family: 'Open sans', sans-serif;
+    max-width: 500px;
+    line-height: 40px;
+    font-size: 40px;
 }
 .caption p{
 	font-family: 'Open sans', sans-serif;
@@ -249,6 +266,7 @@ nav.navbar{
 }
 ul.nav.navbar-nav{
 	margin-left:30px;
+    margin-top: 6px;
 }
 #tabs.nav.nav-tabs{
 	max-width:240px;

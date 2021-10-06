@@ -38,9 +38,13 @@
                                         <a href="{{ route('forget.password.get') }}">Forget password ?</a>
                             </p>
                         </div>
+                        <div class="login-content">
+                            <h3>By creating an account with our store, you will be able to download more features through marketplace, uploading showcase and become Partner and Seller.</h3>
+                        </div>
+                        
                     </div>
-                    <div class="col-sm-6">
-                        <div class="image-block"><img src="../assets/images/login.jpg" class="img-responsive" alt="Login">
+                    <div class="col-sm-6 register-img">
+                        <div class="image-block"><img src="../assets/images/login.png" class="img-responsive" alt="Login">
                         </div>
                     </div>
                 </div>

@@ -145,8 +145,8 @@
                             <p>Already have an account.? <strong>Log in</strong></p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="image-block"><img src="../assets/images/signup.jpg" class="img-responsive" alt="Sign Up">
+                    <div class="col-sm-6 register-img">
+                        <div class="image-block"><img src="../assets/images/signup.png" class="img-responsive" alt="Sign Up">
                         </div>
                     </div>
                 </div>

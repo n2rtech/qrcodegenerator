@@ -32,9 +32,12 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="header-top">
+        <div class="container">
         @include('frontend.sections.navbar')
+        </div>
     </div>
+    
     @yield('content')
     @include('frontend.sections.sub-footer')
     @include('frontend.sections.footer')
