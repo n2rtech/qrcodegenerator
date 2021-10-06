@@ -39,7 +39,7 @@
                             </p>
                         </div>
                         <div class="login-content">
-                            <h3>By creating an account with our store, you will be able to download more features through marketplace, uploading showcase and become Partner and Seller.</h3>
+                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
                         </div>
                         
                     </div>
