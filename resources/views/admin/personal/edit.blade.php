@@ -92,16 +92,6 @@
                         </div>
 
                         <div class="form-group row mb-3">
-                            <label class="col-sm-3 control-label" for="input-status">Status</label>
-                            <div class="col-sm-9">
-                                <select name="status" id="input-status" class="form-control">
-                                    <option value="1" selected="selected">Enabled</option>
-                                    <option value="0">Disabled</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-3">
                             <label for="address_1" class="col-3 col-form-label">Address 1</label>
                             <div class="col-9">
                                 <input type="text" name="address_1"
