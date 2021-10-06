@@ -57,9 +57,9 @@
 
                         <p class="mailing-address">Personal Mailing Address</p>
                         <div class="form-group col-sm-12">
-                            <input type="text" class="form-control" id="company_name" name="company_name"
-                                placeholder="Company Name" value="{{ old('company_name') }}">
-                            @error('company_name')
+                            <input type="text" class="form-control" id="business_name" name="business_name"
+                                placeholder="Company Name" value="{{ old('business_name') }}">
+                            @error('business_name')
                                 <p class="text-danger" style="font-size: 13px;">{{ $message }}</p>
                             @enderror
                         </div>
