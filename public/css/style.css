@@ -38,11 +38,11 @@ ul.nav.navbar-nav{
     position: relative;
     left: 15%;
 }
-.login-content h3{
-    font-size: 16px;
-    line-height: 34px;
-    margin-top: 50px;
-    color: #222;
+.login-content h3 {
+    font-size: 13px;
+    line-height: 30px;
+    margin-top: 40px;
+    color: #4c4c4c;
     text-align: center;
 }
 .btn-default {
