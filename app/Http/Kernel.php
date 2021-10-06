@@ -72,6 +72,7 @@ class Kernel extends HttpKernel
     ];
 
     protected $middlewarePriority = [
+        \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         \App\Http\Middleware\CheckUserIsActive::class,
     ];
 }

@@ -103,6 +103,7 @@ class PersonalUserController extends Controller
             $user->avatar = $name;
 
         }
+        $user->status           = $request->status;
         $user->save();
 
         $user->assignRole('Personal');
@@ -166,6 +167,7 @@ class PersonalUserController extends Controller
         $user->business_name    = $request->business_name;
         $user->email            = $request->email;
         $user->mobile           = $request->mobile;
+        $user->status           = $request->status;
         if($request->hasfile('avatar')){
 
             $image = $request->file('avatar');
