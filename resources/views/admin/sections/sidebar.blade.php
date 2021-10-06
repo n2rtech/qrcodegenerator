@@ -4,10 +4,10 @@
     <!-- LOGO -->
     <a href="{{route('admin.dashboard')}}" class="logo text-center logo-light">
         <span class="logo-lg">
-            <h3 class="text-white logo"><b>ENQUIRES</b></h3>
+            <img src="{{asset('assets/images/logo.jpg')}}" alt="Logo">
         </span>
         <span class="logo-sm">
-            <h3 class="text-white logo">ENQUIRES</h3>
+            <img src="{{asset('assets/images/logo.jpg')}}" alt="Logo">
         </span>
     </a>
 

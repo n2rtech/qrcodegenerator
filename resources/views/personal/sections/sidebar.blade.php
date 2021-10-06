@@ -10,10 +10,10 @@
             <img src="{{asset('assets/images/logo_sm.png')}}" alt="" height="16">
         </span> --}}
         <span class="logo-lg">
-            <h3><b>ENQUIRES</b></h3>
+            <img src="{{asset('assets/images/logo.jpg')}}" alt="Logo">
         </span>
         <span class="logo-sm">
-            <h3>ENQUIRES</h3>
+            <img src="{{asset('assets/images/logo.jpg')}}" alt="Logo">
         </span>
     </a>
 
