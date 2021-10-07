@@ -37,7 +37,7 @@
             <li class="side-nav-item">
                 <a href="javascript: void(0);" class="side-nav-link">
                     <i class="uil-store"></i>
-                    <span> Personal Users </span>
+                    <span> Seller Users </span>
                     <span class="menu-arrow"></span>
                 </a>
                 <ul class="side-nav-second-level" aria-expanded="false">

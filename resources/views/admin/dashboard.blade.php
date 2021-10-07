@@ -131,12 +131,12 @@
                         <a href="javascript:void(0);" class="dropdown-item">Action</a>
                     </div>
                 </div>
-                <h4 class="header-title mb-4">Latest Leads</h4>
+                <h4 class="header-title mb-4">Latest Seller</h4>
 
                 <div class="media">
                     <img class="mr-3 rounded-circle" src="assets/images/users/avatar-2.jpg" width="40" alt="Generic placeholder image">
                     <div class="media-body">
-                        <span class="badge badge-warning-lighten float-right">Cold lead</span>
+                        <span class="badge badge-success-lighten float-right">Approved</span>
                         <h5 class="mt-0 mb-1">Risa Pearson</h5>
                         <span class="font-13">richard.john@mail.com</span>
                     </div>
@@ -145,7 +145,7 @@
                 <div class="media mt-3">
                     <img class="mr-3 rounded-circle" src="assets/images/users/avatar-3.jpg" width="40" alt="Generic placeholder image">
                     <div class="media-body">
-                        <span class="badge badge-danger-lighten float-right">Lost lead</span>
+                        <span class="badge badge-danger-lighten float-right">Not approved</span>
                         <h5 class="mt-0 mb-1">Margaret D. Evans</h5>
                         <span class="font-13">margaret.evans@rhyta.com</span>
                     </div>
@@ -154,7 +154,7 @@
                 <div class="media mt-3">
                     <img class="mr-3 rounded-circle" src="assets/images/users/avatar-4.jpg" width="40" alt="Generic placeholder image">
                     <div class="media-body">
-                        <span class="badge badge-success-lighten float-right">Won lead</span>
+                        <span class="badge badge-success-lighten float-right">Approved</span>
                         <h5 class="mt-0 mb-1">Bryan J. Luellen</h5>
                         <span class="font-13">bryuellen@dayrep.com</span>
                     </div>
@@ -163,7 +163,7 @@
                 <div class="media mt-3">
                     <img class="mr-3 rounded-circle" src="assets/images/users/avatar-5.jpg" width="40" alt="Generic placeholder image">
                     <div class="media-body">
-                        <span class="badge badge-warning-lighten float-right">Cold lead</span>
+                        <span class="badge badge-success-lighten float-right">Approved</span>
                         <h5 class="mt-0 mb-1">Kathryn S. Collier</h5>
                         <span class="font-13">collier@jourrapide.com</span>
                     </div>
@@ -172,7 +172,7 @@
                 <div class="media mt-3">
                     <img class="mr-3 rounded-circle" src="assets/images/users/avatar-1.jpg" width="40" alt="Generic placeholder image">
                     <div class="media-body">
-                        <span class="badge badge-warning-lighten float-right">Cold lead</span>
+                        <span class="badge badge-danger-lighten float-right">Not approved</span>
                         <h5 class="mt-0 mb-1">Timothy Kauper</h5>
                         <span class="font-13">thykauper@rhyta.com</span>
                     </div>
@@ -181,7 +181,7 @@
                 <div class="media mt-3">
                     <img class="mr-3 rounded-circle" src="assets/images/users/avatar-6.jpg" width="40" alt="Generic placeholder image">
                     <div class="media-body">
-                        <span class="badge badge-success-lighten float-right">Won lead</span>
+                        <span class="badge badge-success-lighten float-right">Approved</span>
                         <h5 class="mt-0 mb-1">Zara Raws</h5>
                         <span class="font-13">austin@dayrep.com</span>
                     </div>
