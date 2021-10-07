@@ -8,15 +8,15 @@
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-                        <li class="breadcrumb-item active">Personal Users</li>
+                        <li class="breadcrumb-item active">Seller Users</li>
                         @if (Route::current()->getName() == 'admin.personal-users.index')
                             <li class="breadcrumb-item active">All Users</li>
                         @endif
                         @if (Route::current()->getName() == 'admin.verified-users')
-                            <li class="breadcrumb-item active">Verified Personal Users</li>
+                            <li class="breadcrumb-item active">Verified Seller Users</li>
                         @endif
                         @if (Route::current()->getName() == 'admin.unverified-users')
-                            <li class="breadcrumb-item active">Unverified Personal Users</li>
+                            <li class="breadcrumb-item active">Unverified Seller Users</li>
                         @endif
                     </ol>
                 </div>
@@ -32,18 +32,18 @@
                     <div class="row">
                         <div class="col-sm-4">
                             @if (Route::current()->getName() == 'admin.personal-users.index')
-                                <h3 class="header-title">All Personal Users</h3>
+                                <h3 class="header-title">All Seller Users</h3>
                             @endif
                             @if (Route::current()->getName() == 'admin.verified-users')
-                                <h3 class="header-title">Verified Personal Users</h3>
+                                <h3 class="header-title">Verified Seller Users</h3>
                             @endif
                             @if (Route::current()->getName() == 'admin.unverified-users')
-                                <h3 class="header-title">Unverified Personal Users</h3>
+                                <h3 class="header-title">Unverified Seller Users</h3>
                             @endif
                         </div>
                         <div class="col-sm-8 text-right">
                             <a href="{{ route('admin.personal-users.create') }}" class="btn btn-success mb-3"><i
-                                    class="mdi mdi-plus"></i> Personal User</a>
+                                    class="mdi mdi-plus"></i> Seller User</a>
                         </div>
                         <div class="table-responsive">
                             <table class="table table-hover table-centered datatable datatable-ProductCategory">

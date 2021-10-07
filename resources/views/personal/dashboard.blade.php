@@ -11,7 +11,7 @@
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </div>
-                <h4 class="page-title">Personal Dashboard</h4>
+                <h4 class="page-title">Seller Dashboard</h4>
             </div>
         </div>
     </div>

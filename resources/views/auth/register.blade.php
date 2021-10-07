@@ -17,7 +17,7 @@
     </div>
     <div class="register-section">
         <div class="container">
-            <h1>Create A Personal Account</h1>
+            <h1>Create A Seller Account</h1>
             <form method="POST" action={{ route('register') }} id="signupForm">
                 @csrf
                 <div class="row">
@@ -55,7 +55,7 @@
                             @enderror
                         </div>
 
-                        <p class="mailing-address">Personal Mailing Address</p>
+                        <p class="mailing-address">Seller Mailing Address</p>
                         <div class="form-group col-sm-12">
                             <input type="text" class="form-control" id="business_name" name="business_name"
                                 placeholder="Company Name" value="{{ old('business_name') }}">

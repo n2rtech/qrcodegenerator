@@ -9,7 +9,7 @@
                                     </span>
                                     <span>
                                         <span class="account-user-name">{{Auth::user()->firstname}} {{Auth::user()->lastname}}</span>
-                                        <span class="account-position">Personal User</span>
+                                        <span class="account-position">Seller User</span>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
