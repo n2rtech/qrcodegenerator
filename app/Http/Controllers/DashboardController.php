@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\User;
 class DashboardController extends Controller
 {
     /**
@@ -23,6 +23,7 @@ class DashboardController extends Controller
      */
     public function dashboard()
     {
-        return view('frontend.dashboard');
+        $users = User::all();
+        return view('frontend.dashboard',compact('users'));
     }
 }

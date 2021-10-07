@@ -124,73 +124,27 @@
                     <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
                         <i class="mdi mdi-dots-vertical"></i>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Settings</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                    </div>
                 </div>
                 <h4 class="header-title mb-4">Latest Seller</h4>
-
-                <div class="media">
-                    <img class="mr-3 rounded-circle" src="assets/images/users/avatar-2.jpg" width="40" alt="Generic placeholder image">
+                @foreach($users as $user)
+                <div class="media mb-3">
+                    <img class="mr-3 rounded-circle" src="{{$user->profile_picture}}" width="40" alt="Generic placeholder image">
                     <div class="media-body">
+                        @if($user->status == 1)
                         <span class="badge badge-success-lighten float-right">Approved</span>
-                        <h5 class="mt-0 mb-1">Risa Pearson</h5>
-                        <span class="font-13">richard.john@mail.com</span>
-                    </div>
-                </div>
-
-                <div class="media mt-3">
-                    <img class="mr-3 rounded-circle" src="assets/images/users/avatar-3.jpg" width="40" alt="Generic placeholder image">
-                    <div class="media-body">
+                        @endif
+                        @if($user->status == 0)
                         <span class="badge badge-danger-lighten float-right">Not approved</span>
-                        <h5 class="mt-0 mb-1">Margaret D. Evans</h5>
-                        <span class="font-13">margaret.evans@rhyta.com</span>
+                        @endif
+                        <h5 class="mt-0 mb-1">{{$user->firstname}} {{$user->lastname}}</h5>
+                        <span class="font-13">{{$user->email}}</span>
                     </div>
                 </div>
-
-                <div class="media mt-3">
-                    <img class="mr-3 rounded-circle" src="assets/images/users/avatar-4.jpg" width="40" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <span class="badge badge-success-lighten float-right">Approved</span>
-                        <h5 class="mt-0 mb-1">Bryan J. Luellen</h5>
-                        <span class="font-13">bryuellen@dayrep.com</span>
-                    </div>
-                </div>
-
-                <div class="media mt-3">
-                    <img class="mr-3 rounded-circle" src="assets/images/users/avatar-5.jpg" width="40" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <span class="badge badge-success-lighten float-right">Approved</span>
-                        <h5 class="mt-0 mb-1">Kathryn S. Collier</h5>
-                        <span class="font-13">collier@jourrapide.com</span>
-                    </div>
-                </div>
-
-                <div class="media mt-3">
-                    <img class="mr-3 rounded-circle" src="assets/images/users/avatar-1.jpg" width="40" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <span class="badge badge-danger-lighten float-right">Not approved</span>
-                        <h5 class="mt-0 mb-1">Timothy Kauper</h5>
-                        <span class="font-13">thykauper@rhyta.com</span>
-                    </div>
-                </div>
-
-                <div class="media mt-3">
-                    <img class="mr-3 rounded-circle" src="assets/images/users/avatar-6.jpg" width="40" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <span class="badge badge-success-lighten float-right">Approved</span>
-                        <h5 class="mt-0 mb-1">Zara Raws</h5>
-                        <span class="font-13">austin@dayrep.com</span>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
-    </div> 
+    </div>
 </div>
-</div> 
-</div> 
+</div>
+</div>
 @endsection
