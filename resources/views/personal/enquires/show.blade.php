@@ -24,7 +24,7 @@
 						<h4 class="mt-2">Enquiries</h4>
 					</div>
 					<div class="col-md-8 text-right">
-						<a href="{{route('personal.enquiries.edit',$enquiry->id)}}" class="btn btn-warning">Show</a>
+						<a href="{{route('personal.enquiries.edit',$enquiry->id)}}" class="btn btn-warning">Edit</a>
 						<a href="{{ url()->previous() }}" class="btn btn-outline-dark">Back </a>
 					</div>
 				</div>
