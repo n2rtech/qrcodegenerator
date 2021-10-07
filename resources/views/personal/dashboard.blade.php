@@ -17,113 +17,48 @@
     </div>
     @include('personal.sections.flash-message')
     <!-- end page title -->
-    
 
-        
-        
-    
+
+
+
+
         <div class="row">
                 <div class="col-xl-12 col-lg-12 order-lg-2 order-xl-1">
                     <div class="card">
                         <div class="card-body">
-                            <a href="" class="btn btn-sm btn-link float-right mb-3">Export
-                                <i class="mdi mdi-download ml-1"></i>
-                            </a>
                             <h4 class="header-title mt-2">Latest</h4>
 
                             <div class="table-responsive">
                                 <table class="table table-centered table-nowrap table-hover mb-0">
                                     <tbody>
+                                        @foreach($enquiries as $enquiry)
                                         <tr>
                                             <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">ASOS Ridley High Waist</h5>
-                                                <span class="text-muted font-13">07 April 2018</span>
+                                                <h5 class="font-14 my-1 font-weight-normal">{{$enquiry->customer_details}}</h5>
+                                                <span class="text-muted font-13">Customer</span>
                                             </td>
                                             <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$79.49</h5>
-                                                <span class="text-muted font-13">Price</span>
+                                                <h5 class="font-14 my-1 font-weight-normal">{{$enquiry->product_type}}</h5>
+                                                <span class="text-muted font-13">Type</span>
                                             </td>
                                             <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">82</h5>
-                                                <span class="text-muted font-13">Quantity</span>
+                                                <h5 class="font-14 my-1 font-weight-normal">{{$enquiry->pti_no}}</h5>
+                                                <span class="text-muted font-13">PTI No.</span>
                                             </td>
                                             <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$6,518.18</h5>
-                                                <span class="text-muted font-13">Amount</span>
+                                                <h5 class="font-14 my-1 font-weight-normal">{{$enquiry->job_no}}</h5>
+                                                <span class="text-muted font-13">Job No.</span>
+                                            </td>
+                                            <td>
+                                                <h5 class="font-14 my-1 font-weight-normal">{{$enquiry->panel_name}}</h5>
+                                                <span class="text-muted font-13">Panel Name</span>
+                                            </td>
+                                            <td>
+                                                <h5 class="font-14 my-1 font-weight-normal">{{$enquiry->construction_type}}</h5>
+                                                <span class="text-muted font-13">Construction Type</span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">Marco Lightweight Shirt</h5>
-                                                <span class="text-muted font-13">25 March 2018</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$128.50</h5>
-                                                <span class="text-muted font-13">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">37</h5>
-                                                <span class="text-muted font-13">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$4,754.50</h5>
-                                                <span class="text-muted font-13">Amount</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">Half Sleeve Shirt</h5>
-                                                <span class="text-muted font-13">17 March 2018</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$39.99</h5>
-                                                <span class="text-muted font-13">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">64</h5>
-                                                <span class="text-muted font-13">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$2,559.36</h5>
-                                                <span class="text-muted font-13">Amount</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">Lightweight Jacket</h5>
-                                                <span class="text-muted font-13">12 March 2018</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$20.00</h5>
-                                                <span class="text-muted font-13">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">184</h5>
-                                                <span class="text-muted font-13">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$3,680.00</h5>
-                                                <span class="text-muted font-13">Amount</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">Marco Shoes</h5>
-                                                <span class="text-muted font-13">05 March 2018</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$28.49</h5>
-                                                <span class="text-muted font-13">Price</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">69</h5>
-                                                <span class="text-muted font-13">Quantity</span>
-                                            </td>
-                                            <td>
-                                                <h5 class="font-14 my-1 font-weight-normal">$1,965.81</h5>
-                                                <span class="text-muted font-13">Amount</span>
-                                            </td>
-                                        </tr>
+                                        @endforeach
 
                                     </tbody>
                                 </table>

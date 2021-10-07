@@ -30,7 +30,7 @@ class EnquiresController extends Controller
      */
     public function index()
     {
-        $enquiries = Enquiry::latest()->paginate(20);
+        $enquiries = Enquiry::where('user_id', Auth::user()->id)->latest()->paginate(20);
         return view('personal.enquires.list', compact('enquiries'));
     }
 

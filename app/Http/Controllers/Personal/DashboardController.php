@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Personal;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Models\Enquiry;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
 class DashboardController extends Controller
 {
     /**
@@ -24,6 +27,7 @@ class DashboardController extends Controller
      */
     public function dashboard()
     {
-        return view('personal.dashboard');
+        $enquiries = Enquiry::where('user_id', Auth::User()->id)->latest()->get();
+        return view('personal.dashboard',compact('enquiries'));
     }
 }
