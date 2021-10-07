@@ -142,7 +142,7 @@
                         <div class="account-button text-center">
                             <button type="submit" class="btn btn-primary" id="btn-createaccount" form="signupForm">Create an
                                 Account</button>
-                            <p>Already have an account.? <strong>Log in</strong></p>
+                            <p>Already have an account.? <strong><a href="{{ route('login') }}">Login</a></strong></p>
                         </div>
                     </div>
                     <div class="col-sm-6 register-img">
