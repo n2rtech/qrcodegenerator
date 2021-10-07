@@ -28,15 +28,131 @@
                         </div>
                         <div class="col-md-8 text-right">
                             <a href="{{ url()->previous() }}" class="btn btn-dark btn-sm">Back </a>
-                            <button type="submit" class="btn btn-success btn-sm" form="enquiryForm"><i class="mdi mdi-content-save"></i> Save </button>
+                            <button type="submit" class="btn btn-success btn-sm" form="enquiryForm"><i
+                                    class="mdi mdi-content-save"></i> Save </button>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                    <form class="form-horizontal" id="enquiryForm" action="{{ route('personal.enquiries.store') }}" method="POST"
-                        enctype="multipart/form-data">
+                    <form class="form-horizontal" id="enquiryForm" action="{{ route('personal.enquiries.store') }}"
+                        method="POST" enctype="multipart/form-data">
 
                         @csrf
+
+                        <div class="form-group row mb-3">
+                            <label for="customer" class="col-3 col-form-label">Customer</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="customer" placeholder="Customer Name"
+                                    name="customer"
+                                    value="{{ old('customer', isset($enquiry) ? $enquiry->customer : '') }}">
+                                @if ($errors->has('customer'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('customer') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="product_type" class="col-3 col-form-label">Product Type</label>
+                            <div class="col-9">
+                                <select class="form-control" name="product_type" id="product_type">
+                                    <option value="HT Panels">HT Panels</option>
+                                    <option value="LT Panels">LT Panels</option>
+                                    <option value="C&R Panels">C&R Panels</option>
+                                    <option value="CSS">CSS</option>
+                                    <option value="RMU">RMU</option>
+                                    <option value="OVCB">OVCB</option>
+                                    <option value="CT">CT</option>
+                                    <option value="PT">PT</option>
+                                    <option value="LA">LA</option>
+                                    <option value="Isolator">Isolator</option>
+                                    <option value="Type 2 AC EV Charger">Type 2 AC EV Charger</option>
+                                </select>
+                                @if ($errors->has('product_type'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('product_type') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="pti_no" class="col-3 col-form-label">PTI No.</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="pti_no" placeholder="PTI No" name="pti_no"
+                                    value="{{ old('pti_no', isset($enquiry) ? $enquiry->pti_no : '') }}">
+                                @if ($errors->has('pti_no'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('pti_no') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="job_no" class="col-3 col-form-label">S.O No. / Job No.</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="job_no" placeholder="S.O No. / Job No."
+                                    name="job_no" value="{{ old('job_no', isset($enquiry) ? $enquiry->job_no : '') }}">
+                                @if ($errors->has('job_no'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('job_no') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="panel_name" class="col-3 col-form-label">Panel Name</label>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="panel_name" placeholder="Panel Name"
+                                    name="panel_name"
+                                    value="{{ old('panel_name', isset($enquiry) ? $enquiry->panel_name : '') }}">
+                                @if ($errors->has('panel_name'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('panel_name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="construction_type" class="col-3 col-form-label">Construction Type</label>
+                            <div class="col-9">
+                                <select class="form-control" name="construction_type" id="construction_type">
+                                    <option value="Indoor">Indoor</option>
+                                    <option value="Outdoor">Outdoor</option>
+                                </select>
+                                @if ($errors->has('construction_type'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('construction_type') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="rating" class="col-3 col-form-label">Rating</label>
+                            <div class="col-9">
+                                <select id="rating">
+                                    <option value="0">Bad</option>
+                                    <option value="1" selected="selected">OK</option>
+                                    <option value="2">Good</option>
+                                    <option value="3">Great</option>
+                                    <option value="4">Excellent</option>
+                                </select>
+                                <div class="rateit rateit-mdi" data-rateit-backingfld="#rating" data-rateit-mode="font"
+                                    data-rateit-icon="󰓒"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label for="files" class="col-3 col-form-label">Upload Files</label>
+                            <div class="col-9">
+                            <input type="file" id="files" class="form-control-file" multiple>
+                            </div>
+                        </div>
 
 
                         <div class="form-group mb-0 justify-content-end row text-right">
@@ -52,21 +168,5 @@
     </div>
 @endsection
 @push('scripts')
-<script>
-	function loadPreview(input, id) {
-		id = id || '#preview_img';
-		if (input.files && input.files[0]) {
-			var reader = new FileReader();
-
-			reader.onload = function (e) {
-				$(id)
-				.attr('src', e.target.result)
-				.width(150)
-				.height(150);
-			};
-
-			reader.readAsDataURL(input.files[0]);
-		}
-	}
-</script>
+    <script src="{{ asset('assets/js/vendor/jquery.rateit.min.js') }}"></script>
 @endpush

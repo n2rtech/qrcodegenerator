@@ -55,9 +55,6 @@ h4.notification-title{
 	 margin-top: 1px;
 }
 button.btn.btn-success {
-	background: #eef2f7;
-    border-color: #eef2f7;
+    border-color: black;
     box-shadow: none;
-    margin-bottom: 15px;
-    margin-top: 10px;
 }
