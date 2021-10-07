@@ -14,43 +14,47 @@
                     <table class="table table-bordered">
                         <tbody>
                             <tr>
-                                <th>PRODUCT F.G/UID NO.</th>
-                                <th>HT Panel</th> 
+                                <th>PRODUCT TYPE</th>
+                                <th>{{$enquiry->product_type}}</th>
                             </tr>
                             <tr>
-                                <th>PANEL NO.</th>
-                                <th>12</th> 
+                                <th>PTI NO.</th>
+                                <th>{{$enquiry->pti_no}}</th>
                             </tr>
                             <tr>
                                 <th>S.O. NO.</th>
-                                <th>34569812987</th> 
+                                <th>{{$enquiry->job_no}}</th>
                             </tr>
                             <tr>
                                 <th>PANEL NAME</th>
-                                <th>11KV HT Switchboard</th> 
+                                <th>{{$enquiry->panel_name}}</th>
                             </tr>
                             <tr>
                                 <th>TYPE OF PANEL</th>
-                                <th>Indoor</th> 
+                                <th>{{$enquiry->construction_type}}</th>
                             </tr>
                             <tr>
                                 <th>Rating</th>
-                                <th>2500A</th> 
+                                <th>{{$enquiry->rating}}</th>
                             </tr>
                             <tr>
                                 <th>Files</th>
-                                <th><a href="#">Test Document.pdf</a></th> 
+                                <th>
+                                    @foreach($enquiry->files as $file)
+                                    <a href="{{route('download.file', $file->id)}}">{{$file->filename}}</a><br>
+                                    @endforeach
+                                </th>
                             </tr>
                             <tr>
-                                <th>Customer: M/s XYZ <br>Electricals Private Limited</th>
-                                <th><a href="#" class="btn btn-danger">DOWNLOAD PDF</a></th> 
+                                <th>Customer</th>
+                                <th>{{$enquiry->customer_details}}</th>
                             </tr>
                         </tbody>
                     </table>
-                </div> 
-                    
-        </div>    
+                </div>
+
         </div>
-   
+        </div>
+
 
 @endsection

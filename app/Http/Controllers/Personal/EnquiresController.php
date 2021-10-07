@@ -101,7 +101,10 @@ class EnquiresController extends Controller
     public function show($id)
     {
         $enquiry = Enquiry::find($id);
-        return view('personal.enquires.show', compact('enquiry'));
+        $enquiry->load('files');
+        $base_url = URL::to('/');
+        $path = $base_url.'/results'.'/'.$enquiry->id;
+        return view('personal.enquires.show', compact('enquiry', 'path'));
     }
 
     /**
