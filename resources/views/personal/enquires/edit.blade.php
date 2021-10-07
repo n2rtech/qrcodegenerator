@@ -71,6 +71,7 @@
                                     <option value="LA" @if($enquiry->product_type == "LA") selected @endif>LA</option>
                                     <option value="Isolator" @if($enquiry->product_type == "Isolator") selected @endif>Isolator</option>
                                     <option value="Type 2 AC EV Charger" @if($enquiry->product_type == "Type 2 AC EV Charger") selected @endif>Type 2 AC EV Charger</option>
+                                    <option value="Other" @if($enquiry->product_type == "Other") selected @endif>Other</option>
                                 </select>
                                 @if ($errors->has('product_type'))
                                     <span class="invalid-feedback" role="alert">
@@ -126,6 +127,7 @@
                                 <select class="form-control" name="construction_type" id="construction_type">
                                     <option value="Indoor" @if($enquiry->construction_type == "Indoor") selected @endif>Indoor</option>
                                     <option value="Outdoor" @if($enquiry->construction_type == "Outdoor") selected @endif>Outdoor</option>
+                                    <option value="Other" @if($enquiry->construction_type == "Other") selected @endif>Other</option>
                                 </select>
                                 @if ($errors->has('construction_type'))
                                     <span class="invalid-feedback" role="alert">

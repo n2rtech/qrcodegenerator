@@ -23,17 +23,6 @@
     <div class="col-xl-6 col-lg-6">
         <div class="card">
             <div class="card-body">
-                <div class="dropdown float-right">
-                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-dots-vertical"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Settings</a>
-                        <!-- item-->
-                        <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                    </div>
-                </div>
                 <h4 class="header-title mb-3">Enquiries</h4>
 
                 <div class="table-responsive">
@@ -41,73 +30,27 @@
                         <thead>
                             <tr>
                                 <th>User</th>
-                                <th>Leads</th>
-                                <th>Deals</th>
-                                <th>Tasks</th>
+                                <th>Product Type</th>
+                                <th>Job No.</th>
+                                <th>Panel Name</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($enquiries as $enquiry)
                             <tr>
                                 <td>
-                                    <h5 class="font-15 mb-1 font-weight-normal">Jeremy Young</h5>
-                                    <span class="text-muted font-13">Senior Sales Executive</span>
+                                    <h5 class="font-15 mb-1 font-weight-normal">{{$enquiry->user->firstname}}{{$enquiry->user->lastname}}</h5>
+                                    <span class="text-muted font-13">{{$enquiry->user->role}}</span>
                                 </td>
-                                <td>187</td>
-                                <td>154</td>
-                                <td>49</td>
+                                <td>{{$enquiry->product_type}}</td>
+                                <td>{{$enquiry->job_no}}</td>
+                                <td>{{$enquiry->panel_name}}</td>
                                 <td class="table-action">
                                     <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <h5 class="font-15 mb-1 font-weight-normal">Thomas Krueger</h5>
-                                    <span class="text-muted font-13">Senior Sales Executive</span>
-                                </td>
-                                <td>235</td>
-                                <td>127</td>
-                                <td>83</td>
-                                <td class="table-action">
-                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5 class="font-15 mb-1 font-weight-normal">Pete Burdine</h5>
-                                    <span class="text-muted font-13">Senior Sales Executive</span>
-                                </td>
-                                <td>365</td>
-                                <td>148</td>
-                                <td>62</td>
-                                <td class="table-action">
-                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5 class="font-15 mb-1 font-weight-normal">Mary Nelson</h5>
-                                    <span class="text-muted font-13">Senior Sales Executive</span>
-                                </td>
-                                <td>753</td>
-                                <td>159</td>
-                                <td>258</td>
-                                <td class="table-action">
-                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h5 class="font-15 mb-1 font-weight-normal">Kevin Grove</h5>
-                                    <span class="text-muted font-13">Senior Sales Executive</span>
-                                </td>
-                                <td>458</td>
-                                <td>126</td>
-                                <td>73</td>
-                                <td class="table-action">
-                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                </td>
-                            </tr>
+                           @endforeach
                         </tbody>
                     </table>
                 </div> <!-- end table-responsive-->
@@ -120,11 +63,6 @@
     <div class="col-xl-6 col-lg-6">
         <div class="card">
             <div class="card-body">
-                <div class="dropdown float-right">
-                    <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
-                        <i class="mdi mdi-dots-vertical"></i>
-                    </a>
-                </div>
                 <h4 class="header-title mb-4">Latest Seller</h4>
                 @foreach($users as $user)
                 <div class="media mb-3">

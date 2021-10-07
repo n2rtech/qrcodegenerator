@@ -71,6 +71,7 @@
                                     <option value="LA">LA</option>
                                     <option value="Isolator">Isolator</option>
                                     <option value="Type 2 AC EV Charger">Type 2 AC EV Charger</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 @if ($errors->has('product_type'))
                                     <span class="invalid-feedback" role="alert">
@@ -126,6 +127,7 @@
                                 <select class="form-control" name="construction_type" id="construction_type">
                                     <option value="Indoor">Indoor</option>
                                     <option value="Outdoor">Outdoor</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 @if ($errors->has('construction_type'))
                                     <span class="invalid-feedback" role="alert">
