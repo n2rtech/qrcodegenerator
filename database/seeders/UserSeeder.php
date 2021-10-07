@@ -42,7 +42,7 @@ class UserSeeder extends Seeder
 
         $enquiryOne = new Enquiry;
         $enquiryOne->user_id = $personal->id;
-        $enquiryOne->product_type = "HT panels";
+        $enquiryOne->product_type = "HT Panels";
         $enquiryOne->pti_no      = "43210";
         $enquiryOne->job_no     = "01234";
         $enquiryOne->panel_name   = "Panel A";
@@ -53,13 +53,13 @@ class UserSeeder extends Seeder
 
         $enquiryTwo = new Enquiry;
         $enquiryTwo->user_id = $personal->id;
-        $enquiryTwo->product_type = "LT panels";
+        $enquiryTwo->product_type = "LT Panels";
         $enquiryTwo->pti_no      = "54320";
         $enquiryTwo->job_no     = "02345";
         $enquiryTwo->panel_name   = "Panel B";
         $enquiryTwo->construction_type   = "Outdoor";
-        $enquiryTwo->rating   = "3";
-        $enquiryTwo->customer_details   = "United Kingdom";
+        $enquiryTwo->rating   = "3.5";
+        $enquiryTwo->customer_details   = "N2R Technologies";
         $enquiryTwo->save();
 
     }

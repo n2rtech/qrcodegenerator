@@ -37,6 +37,10 @@ Route::group(['middleware' => ['active']], function () {
 
     Route::resource('enquiries', EnquiresController::class);
 
+    Route::get('download-file/{id}', [EnquiresController::class, 'downloadFile'])->name('download.file');
+
+    Route::delete('delete-file/{id}', [EnquiresController::class, 'deleteFile'])->name('delete.file');
+
 });
     /*
 |--------------------------------------------------------------------------

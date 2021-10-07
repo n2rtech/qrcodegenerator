@@ -5,8 +5,24 @@ namespace App\Http\Controllers\Personal;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Enquiry;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Auth;
+use App\Models\File;
+use Response;
+
 class EnquiresController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware(['auth', 'verified']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +52,44 @@ class EnquiresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $id = Auth::user()->id;
+        $this->validate($request, [
+            'customer'              => ['required', 'string', 'max:255'],
+            'product_type'          => ['required', 'string'],
+            'pti_no'                => ['required', 'string'],
+            'job_no'                => ['required', 'string'],
+            'panel_name'            => ['required', 'string'],
+            'construction_type'     => ['required', 'string'],
+        ]);
+
+        $enquiry = new Enquiry;
+        $enquiry->user_id           = $id;
+        $enquiry->customer_details  = $request->customer;
+        $enquiry->product_type      = $request->product_type;
+        $enquiry->pti_no            = $request->pti_no;
+        $enquiry->job_no            = $request->job_no;
+        $enquiry->panel_name        = $request->panel_name;
+        $enquiry->construction_type = $request->construction_type;
+        $enquiry->rating            = $request->rating;
+        $enquiry->save();
+
+        $files = $request->file('files');
+
+        if ($request->hasFile('files')) {
+            foreach ($files as $file) {
+                $name = $file->getClientOriginalName();
+
+                $file->storeAs('uploads/enquiries/' . $id . '/' . $enquiry->id . '/files', $name, 'public');
+
+                $file               = new File;
+                $file->user_id      = $id;
+                $file->enquiry_id   = $enquiry->id;
+                $file->filename     = $name;
+                $file->save();
+            }
+        }
+
+        return redirect()->route('personal.enquiries.index')->with('success', 'Enquiry Saved Successfully');
     }
 
     /**
@@ -60,6 +113,7 @@ class EnquiresController extends Controller
     public function edit($id)
     {
         $enquiry = Enquiry::find($id);
+        $enquiry->load('files');
         return view('personal.enquires.edit', compact('enquiry'));
     }
 
@@ -72,7 +126,43 @@ class EnquiresController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $userid = Auth::user()->id;
+        $this->validate($request, [
+            'customer'              => ['required', 'string', 'max:255'],
+            'product_type'          => ['required', 'string'],
+            'pti_no'                => ['required', 'string'],
+            'job_no'                => ['required', 'string'],
+            'panel_name'            => ['required', 'string'],
+            'construction_type'     => ['required', 'string'],
+        ]);
+
+        $enquiry = Enquiry::find($id);
+        $enquiry->customer_details  = $request->customer;
+        $enquiry->product_type      = $request->product_type;
+        $enquiry->pti_no            = $request->pti_no;
+        $enquiry->job_no            = $request->job_no;
+        $enquiry->panel_name        = $request->panel_name;
+        $enquiry->construction_type = $request->construction_type;
+        $enquiry->rating            = $request->rating;
+        $enquiry->save();
+
+        $files = $request->file('files');
+
+        if ($request->hasFile('files')) {
+            foreach ($files as $file) {
+                $name = $file->getClientOriginalName();
+
+                $file->storeAs('uploads/enquiries/' . $userid . '/' . $id . '/files', $name, 'public');
+
+                $file               = new File;
+                $file->user_id      = $userid;
+                $file->enquiry_id   = $id;
+                $file->filename     = $name;
+                $file->save();
+            }
+        }
+
+        return redirect()->route('personal.enquiries.index')->with('success', 'Enquiry Updated Successfully');
     }
 
     /**
@@ -83,6 +173,35 @@ class EnquiresController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $userid = Auth::user()->id;
+
+        $enquiry = Enquiry::find($id);
+        $enquiry->load('files');
+        foreach($enquiry->files as $file){
+            $path = 'public/uploads/enquiries/' . $file->user_id . '/' . $file->enquiry_id . '/files' . '/' . $file->filename;
+            Storage::delete($path);
+        }
+
+        Enquiry::find($id)->delete();
+
+        return redirect()->route('personal.enquiries.index')->with('success', 'Enquiry Deleted Successfully');
+    }
+
+    public function downloadFile($id)
+    {
+        $file = File::find($id);
+        $storedFile = Storage::disk('public')->path('/uploads/enquiries/' . $file->user_id . '/' . $file->enquiry_id . '/files' . '/' . $file->filename);
+        return Response::download($storedFile);
+    }
+
+    public function deleteFile($id)
+    {
+
+        $file = File::find($id);
+        $enquiry_id = $file->enquiry_id;
+        $path = 'public/uploads/enquiries/' . $file->user_id . '/' . $file->enquiry_id . '/files' . '/' . $file->filename;
+        Storage::delete($path);
+        $file->delete();
+        return redirect()->route('personal.enquiries.edit', $enquiry_id)->with('success', 'File Deleted Successfully');
     }
 }
