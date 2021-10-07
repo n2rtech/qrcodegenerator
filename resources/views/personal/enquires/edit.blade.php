@@ -186,7 +186,7 @@
                         </div>
 
                     </form>
-
+                    @if($enquiry->files->count() > 0)
                         <div class="form-group row mb-3">
                             <label for="files" class="col-3 col-form-label">Uploaded Files</label>
                             <div class="col-9">
@@ -210,7 +210,7 @@
                             </div>
                         </div>
 
-
+                        @endif
                         <div class="form-group mb-0 justify-content-end row text-right">
                             <div class="col-9">
                                 <button type="submit" class="btn btn-success btn-sm" form="enquiryForm"><i
