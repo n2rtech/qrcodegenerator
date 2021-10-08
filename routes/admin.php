@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\Auth\RegisterController;
 use App\Http\Controllers\Admin\Auth\ChangePasswordController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PersonalUserController;
+use App\Http\Controllers\Admin\EnquiryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,7 +57,11 @@ Route::get('unverified-users', [PersonalUserController::class, 'unverified'])->n
 
 Route::post('verify-user', [PersonalUserController::class, 'verifyUser'])->name('verify-user');
 
+Route::resource('enquiries', EnquiryController::class);
 
+Route::get('download-file/{id}', [EnquiryController::class, 'downloadFile'])->name('download.file');
+
+Route::delete('delete-file/{id}', [EnquiryController::class, 'deleteFile'])->name('delete.file');
 
 
 

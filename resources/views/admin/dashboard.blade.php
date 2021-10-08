@@ -47,7 +47,7 @@
                                 <td>{{$enquiry->job_no}}</td>
                                 <td>{{$enquiry->panel_name}}</td>
                                 <td class="table-action">
-                                    <a href="javascript: void(0);" class="action-icon"> <i class="mdi mdi-eye"></i></a>
+                                    <a href="{{route('admin.enquiries.show', $enquiry->id)}}" class="action-icon" > <i class="mdi mdi-eye" style="color: #9b7373"></i></a>
                                 </td>
                             </tr>
                            @endforeach
