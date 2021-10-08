@@ -28,10 +28,10 @@
                         <!-- Logo -->
                         <div class="auth-brand text-center text-lg-left">
                             <a href="{{route('admin.login')}}" class="logo-dark">
-                                <span><h3 class="text-dark"><strong>ENQUIRES</strong></h3></span>
+                                <span><img src="../assets/images/logo.jpg" class="img-responsive" alt="Logo"></span>
                             </a>
                             <a href="{{route('admin.login')}}" class="logo-light">
-                                <span><h3 class="text-dark"><strong>ENQUIRES</strong></h3></span>
+                                <span><img src="../assets/images/logo.jpg" class="img-responsive" alt="Logo"></span>
                             </a>
                         </div>
 

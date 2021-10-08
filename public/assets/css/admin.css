@@ -1,28 +1,51 @@
 /* Css file for admin*/
 .left-side-menu{
-	background:#fff;
+	background:#3b5168;
 }
 .side-nav .side-nav-link span {
     vertical-align: middle;
-    color: #222;
+    color: #ddd;
 }
 .side-nav .side-nav-link span:hover{
-    color:#7E7E7D;
+    color:#f5f5f5;
 }
 .side-nav .side-nav-link i {
-    color: #222;
+    color: #ddd;
 }
 .side-nav .side-nav-link i:hover{
-    color:crimson;
+    color:#f5f5f5;
 }
 .side-nav-second-level li a, .side-nav-third-level li a {
-    color: #222 !important;
+    color: #f5f5f5 !important;
 }
 .side-nav .mm-active>a {
-    color:#222 !important;
+    color:#f5f5f5 !important;
 }
 .side-nav-second-level li a, .side-nav-third-level li a:hover{
-    color: #7E7E7D !important;
+    color: #ddd !important;
+}
+.help-box {
+  background: transparent;
+}
+.simplebar-mask {
+    background: #2e4256;
+}
+.navbar-custom {
+    background-color: #3c5269;
+   box-shadow: none;
+}
+.navbar-custom .topbar-right-menu .nav-link{
+    background-color: #3c5269;
+    border: 1px solid #3c5269;
+    color: #f1f1f1;
+}
+.navbar-custom .topbar-right-menu li.show .nav-link{
+    color: #f1f1f1;
+}
+.table .thead-dark th{
+    background-color: #2e4256;
+    border-color: #2e4256;
+    color: #f1f1f1;
 }
 .btn-outline-light {
     color: #a7abb1;
@@ -35,11 +58,7 @@ h3.text-white.logo{
     font-size: 26px;
 }
 /*-----*/
-.table .thead-dark th{
-	background: #e3e7f7;
-    border-color: #e3e7f7;
-    color: #6a6a6a;
-}
+
 .table-action i{
 	color:#fff;
 }

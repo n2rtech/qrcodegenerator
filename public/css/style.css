@@ -13,6 +13,9 @@ nav.navbar{
 	margin-top: 10px;
     margin-bottom: 10px;
 }
+.simplebar-mask{
+    background: #2e4256!important;
+}
 .navbar-header a.navbar-brand{
 	font-family: 'Poppins', sans-serif;
 	font-weight:700;
