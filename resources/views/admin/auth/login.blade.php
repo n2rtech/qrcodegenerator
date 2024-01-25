@@ -44,24 +44,22 @@
                         @csrf
                             <div class="form-group">
                                 <label for="emailaddress">Email address</label>
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email" autofocus placeholder="Enter your email">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="admin@example.com" autocomplete="email" autofocus placeholder="Enter your email">
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
                             </div>
-                            <span style="display:block;margin-top:5px;margin-bottom:15px">Email: <strong>admin@example.com</strong> </span>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="current-password" placeholder="Enter your password">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="current-password" placeholder="Enter your password" value="password">
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
                             </div>
-                            <span style="display:block;margin-top:5px;margin-bottom:15px">Password: <strong>password</strong> </span>
                             <div class="form-group mb-3">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
